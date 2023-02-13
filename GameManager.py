@@ -75,6 +75,7 @@ class GameManager:
         # 生成DateFrame结构
         now_game_round = GameRound()
         now_game_round.read_jason_data(data)
+        data.clear()
         self.__game_round_list.append(now_game_round)
         # 写入数据库
         # 写入 game表
